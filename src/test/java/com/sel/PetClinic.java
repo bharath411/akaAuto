@@ -1,5 +1,7 @@
 package com.sel;
 
+import java.util.List;
+
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
@@ -114,6 +116,14 @@ public class PetClinic {
 		WebElement element = driver.findElement(By.id("type"));
 		Select select = new Select(element);
 		WebElement selectedOption = select.getFirstSelectedOption();
+		List<WebElement> options = select.getOptions();
+		for (WebElement webElement : options) {
+			String text = webElement.getText();
+			System.out.println(text);
+			String value = webElement.getAttribute("value");
+			System.out.println(value);
+		}
+		
 		String optionText = selectedOption.getText();
 		System.out.println(optionText);
 		return optionText;
