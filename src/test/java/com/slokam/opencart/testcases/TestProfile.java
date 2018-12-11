@@ -1,6 +1,13 @@
 package com.slokam.opencart.testcases;
 
+import java.io.File;
+import java.io.IOException;
+
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class TestProfile extends BaseTestCase{
@@ -11,10 +18,22 @@ public class TestProfile extends BaseTestCase{
 		login("admin","admin");
 		clickOnDemoDropdown();
 		clickOnYourProfile();
-		
 		String email = driver.findElement(By.id("input-email")).getAttribute("value");
 		System.out.println(email);
+		Assert.assertEquals(email, "bharath.kristipati@fsds.com");
 	}
+	
+	public void screenshot() {
+		File source = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		File dest = new File("D:\\screen.jpeg");
+		try {
+			FileUtils.copyFile(source, dest);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
 	
 	public void login(String user,String pass) {
 		driver.findElement(By.id("input-username")).sendKeys(user);

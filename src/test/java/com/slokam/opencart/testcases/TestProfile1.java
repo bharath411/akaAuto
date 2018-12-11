@@ -1,5 +1,6 @@
 package com.slokam.opencart.testcases;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.slokam.opencart.pages.AdminLoginPage;
@@ -20,6 +21,7 @@ public class TestProfile1  extends BaseTestCase{
 		AdminProfilePage adminProfilePage = new AdminProfilePage(driver);
 		String email = adminProfilePage.getAdminEmail();
 		System.out.println(email);
+		
 	}
 	
 	@Test
@@ -31,6 +33,7 @@ public class TestProfile1  extends BaseTestCase{
 		StatisticsPage statisticsPage = new StatisticsPage(driver);
 		String orders = statisticsPage.getTotalOrderSales();
 		System.out.println(orders);
+		Assert.fail();
 	}
 	
 	

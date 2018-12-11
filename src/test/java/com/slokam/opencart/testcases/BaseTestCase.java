@@ -7,12 +7,19 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 
+import com.slokam.opencart.commons.listeners.CustomListeners;
+
+@Listeners(CustomListeners.class)
 public class BaseTestCase {
 
 	String url = "https://demo.opencart.com/admin/";
-	WebDriver driver = null;
+	static WebDriver driver = null;
 
+	public static WebDriver getDriver() {
+		return driver;
+	}
 	public void launchBrowser(String browser) {
 
 		if (browser.equals("firefox")) {
