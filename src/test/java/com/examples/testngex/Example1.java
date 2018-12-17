@@ -11,6 +11,7 @@ public class Example1 {
 	@Test
 	public void test1() {
 		System.out.println("I am test1");
+		System.out.println("Added method test1");
 	}
 	
 	@Test
