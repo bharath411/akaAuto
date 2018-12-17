@@ -1,14 +1,17 @@
 package com.examples.testngex;
 
+import org.testng.Assert;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+
 
 public class Example1 {
 
 	@Test
 	public void test1() {
 		System.out.println("I am test1");
+		Assert.fail();
 	}
 	
 	@Test
