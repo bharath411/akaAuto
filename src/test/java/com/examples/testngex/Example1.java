@@ -11,7 +11,6 @@ public class Example1 {
 	@Test
 	public void test1() {
 		System.out.println("I am test1");
-		Assert.fail();
 	}
 	
 	@Test
