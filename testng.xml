@@ -2,8 +2,8 @@
 <suite name="NaukriAutomation">
 
 	<listeners>
-		<listener
-			class-name="com.slokam.opencart.commons.listeners.CustomListeners"></listener>
+		<!-- <listener
+			class-name="com.slokam.opencart.commons.listeners.CustomListeners"></listener> -->
 		<listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
 	</listeners>
 	<parameter name="user" value="bharath"></parameter>
