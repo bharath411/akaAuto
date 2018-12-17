@@ -12,6 +12,7 @@ public class Example1 {
 	public void test1() {
 		System.out.println("I am test1");
 		System.out.println("Added method test1");
+		System.out.println("One more example");
 	}
 	
 	@Test
