@@ -16,7 +16,7 @@
 		<!-- <classes> <class name="t1.TExample"></class> </classes> -->
 
 		<classes>
-			<class name="com.examples.testngex.Example1">
+			<class name="com.examples.testngex.RepTest">
 			</class>
 		</classes>
 
