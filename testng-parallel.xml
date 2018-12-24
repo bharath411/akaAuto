@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="NaukriAutomation" parallel="methods" thread-count="3">
+
+	
+	<test name="par">
+		<classes>
+			<class name="com.examples.parallel.Par1">
+			</class>
+		</classes>
+
+	</test>
+</suite>
