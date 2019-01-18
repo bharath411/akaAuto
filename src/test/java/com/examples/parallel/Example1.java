@@ -51,6 +51,13 @@ public class Example1 {
 		System.out.println("Example 1 - test5 ended at - " + System.currentTimeMillis());
 	}
 	
+	@Test
+	public void test6() {
+		System.out.println("Example 1 - test6 started at - " + System.currentTimeMillis());
+		sleep(16);
+		System.out.println("Example 1 - test6 ended at - " + System.currentTimeMillis());
+	}
+	
 	public void sleep(int sec) {
 
 		try {
