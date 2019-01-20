@@ -24,4 +24,9 @@ public class DashboardPage {
 		//driver.findElement(By.xpath("//a[contains(text(),'Statistics')]")).click();
 		driver.findElement(By.xpath("//*[@class='collapse in']/li[3]/a")).click();
 	}
+	
+	public void clickOnCoupons() {
+		driver.findElement(By.xpath("//a[contains(text(),'Marketing')]")).click();
+		driver.findElement(By.xpath("//a[contains(text(),'Coupons')]")).click();
+	}
 }
