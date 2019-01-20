@@ -1,4 +1,4 @@
-package com.slokam.opencart.pages;
+ package com.slokam.opencart.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
