@@ -8,7 +8,7 @@ import com.slokam.opencart.pages.AdminProfilePage;
 import com.slokam.opencart.pages.DashboardPage;
 import com.slokam.opencart.pages.StatisticsPage;
 
-public class TestProfile1  extends BaseTestCase{
+public class TestProfile1 extends BaseTestCase{
 
 		
 	@Test

@@ -99,17 +99,23 @@
 			<artifactId>extentreports</artifactId>
 			<version>4.0.6</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.47</version>
+		</dependency>
 
 	</dependencies>
 
-<repositories>
-	<repository>
-		<id>prv</id>
-		<name>priva</name>
-		<url>http://abc.nexus.com</url>
-	</repository>
+	<repositories>
+		<repository>
+			<id>prv</id>
+			<name>priva</name>
+			<url>http://abc.nexus.com</url>
+		</repository>
 
-</repositories>
+	</repositories>
 	<build>
 		<plugins>
 			<!-- Surefire plugin -->

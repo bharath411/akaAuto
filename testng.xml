@@ -1,24 +1,10 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="NaukriAutomation">
+<suite name="OpenCart" parallel="methods" thread-count="6">
 
-	<listeners>
-		<!-- <listener
-			class-name="com.slokam.opencart.commons.listeners.CustomListeners"></listener> -->
-		<listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
-	</listeners>
-	<parameter name="user" value="bharath"></parameter>
-	<parameter name="password" value="bharath123"></parameter>
-	<!-- <parameter name="browser" value="chrome"></parameter> -->
-	<test name="exam">
-		<!-- <packages> <package name="t1"></package> <package name="t2"></package> 
-			</packages> -->
-
-		<!-- <classes> <class name="t1.TExample"></class> </classes> -->
-
+	<test name="sample">
 		<classes>
-			<class name="com.examples.testngex.RepTest">
-			</class>
+			<class name="com.slokam.opencart.testcases.ParExampleSel"></class>
 		</classes>
-
 	</test>
+
 </suite>
