@@ -21,7 +21,7 @@ public class TestLogin  extends BaseTestCase{
 	@Test
 	public void testInValidLogin() {
 		AdminLoginPage adminLoginPage = new AdminLoginPage(driver);
-		adminLoginPage.login("bharath","bharath123");
+		adminLoginPage.login("user","user123");
 		String text = driver.findElement(By.xpath("//h1")).getText();
 		String expected = "Dashboard";
 		Assert.assertEquals(text, expected);

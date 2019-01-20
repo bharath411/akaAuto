@@ -19,7 +19,9 @@ public class DashboardPage {
 	}
 	
 	public void clickOnStatistics() {
-		driver.findElement(By.xpath("//a[contains(text(),'Reports')]")).click();
-		driver.findElement(By.xpath("//a[contains(text(),'Statistics')]")).click();
+		driver.findElement(By.xpath("//*[@id='menu-report']/a")).click();
+		//driver.findElement(By.xpath("//a[contains(text(),'Reports')]")).click();
+		//driver.findElement(By.xpath("//a[contains(text(),'Statistics')]")).click();
+		driver.findElement(By.xpath("//*[@class='collapse in']/li[3]/a")).click();
 	}
 }

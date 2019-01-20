@@ -14,7 +14,7 @@ public class TestProfile1  extends BaseTestCase{
 	@Test
 	public void testSupportFourm() {
 		AdminLoginPage adminLoginPage = new AdminLoginPage(driver);
-		adminLoginPage.login("admin","admin");
+		adminLoginPage.login("user","user123");
 		DashboardPage dashBoardPage = new DashboardPage(driver);
 		dashBoardPage.clickOnDemoDropdown();
 		dashBoardPage.clickOnYourProfile();
@@ -27,13 +27,12 @@ public class TestProfile1  extends BaseTestCase{
 	@Test
 	public void verifyStatistics() {
 		AdminLoginPage adminLoginPage = new AdminLoginPage(driver);
-		adminLoginPage.login("admin","admin");
+		adminLoginPage.login("user","user123");
 		DashboardPage dashBoardPage = new DashboardPage(driver);
 		dashBoardPage.clickOnStatistics();
 		StatisticsPage statisticsPage = new StatisticsPage(driver);
 		String orders = statisticsPage.getTotalOrderSales();
 		System.out.println(orders);
-		Assert.fail();
 	}
 	
 	

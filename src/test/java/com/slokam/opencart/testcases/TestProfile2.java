@@ -14,7 +14,7 @@ public class TestProfile2 extends BaseTestCase{
 	public void testSupportFourm() {
 		AdminLoginPagePF adminLoginPage = new AdminLoginPagePF(driver);
 		PageFactory.initElements(driver, adminLoginPage);
-		adminLoginPage.login("admin","admin");
+		adminLoginPage.login("user","user123");
 		
 	}
 	
