@@ -15,13 +15,17 @@ public class TestProduct {
 		System.out.println("helo2.......");
 		
 	}
-	
+	public void product4(){
+		System.out.println("helo4.......");
+		
+	}
 	
 	public static void main(String[] args) {
 		TestProduct pd = new TestProduct();
 		pd.product();
 		pd.product1();
 		pd.product2();
+		pd.product4();
 		
 	}
 }
