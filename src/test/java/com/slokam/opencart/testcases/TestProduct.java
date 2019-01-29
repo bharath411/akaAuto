@@ -20,12 +20,19 @@ public class TestProduct {
 		
 	}
 	
+	public void product5(){
+		System.out.println("helo5.......");
+		
+	}
+	
+	
 	public static void main(String[] args) {
 		TestProduct pd = new TestProduct();
 		pd.product();
 		pd.product1();
 		pd.product2();
 		pd.product4();
+		pd.product5();
 		
 	}
 }
