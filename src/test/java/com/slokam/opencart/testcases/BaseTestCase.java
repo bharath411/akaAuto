@@ -14,19 +14,19 @@ import com.slokam.opencart.commons.listeners.CustomListeners;
 @Listeners(CustomListeners.class)
 public class BaseTestCase {
 
-	String url = "http://localhost/opencart/admin/";
+	String url = "https://demo.opencart.com/admin/";
 	static WebDriver driver = null;
 
 	public static WebDriver getDriver() {
 		return driver;
 	}
 	public void launchBrowser(String browser) {
-
+ 
 		if (browser.equals("firefox")) {
-			System.setProperty("webdriver.gecko.driver", "C:\\Users\\USEER\\Desktop\\jars3\\gecko_driver\\geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", "./src/test/resources/gekodriver.exe");
 			driver = new FirefoxDriver();
 		} else {
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\USEER\\Desktop\\jars\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver.exe");
 			driver = new ChromeDriver();
 		}
 		driver.get(url);
