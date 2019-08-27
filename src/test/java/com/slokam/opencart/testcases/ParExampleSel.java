@@ -24,10 +24,10 @@ public class ParExampleSel {
 	public void launchBrowser(String browser) {
 
 		if (browser.equals("firefox")) {
-			System.setProperty("webdriver.gecko.driver", "D:\\jars\\geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", ".src/test/resources/chromedriver.exe");
 			driver = new FirefoxDriver();
 		} else {
-			System.setProperty("webdriver.chrome.driver", "D:\\jars\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", ".src/test/resources/geckodriver.exe");
 			driver = new ChromeDriver();
 		}
 		driver.get(url);
