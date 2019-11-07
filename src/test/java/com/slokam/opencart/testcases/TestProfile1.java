@@ -1,6 +1,5 @@
 package com.slokam.opencart.testcases;
 
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.slokam.opencart.pages.AdminLoginPage;

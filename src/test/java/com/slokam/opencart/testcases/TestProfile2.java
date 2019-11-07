@@ -4,8 +4,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
 import com.slokam.opencart.pages.AdminLoginPagePF;
-import com.slokam.opencart.pages.AdminProfilePage;
-import com.slokam.opencart.pages.DashboardPage;
+
 
 public class TestProfile2 extends BaseTestCase{
 

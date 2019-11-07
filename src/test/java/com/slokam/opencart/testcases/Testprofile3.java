@@ -1,8 +1,7 @@
 package com.slokam.opencart.testcases;
 
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
+
 import org.testng.annotations.Test;
 
 import com.slokam.opencart.pages.AdminLoginPage;

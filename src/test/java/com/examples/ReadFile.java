@@ -49,6 +49,7 @@ public class ReadFile {
 			while( (st = reader.readLine()) != null) {
 				System.out.println(st);
 			}
+			reader.close();
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {

@@ -25,10 +25,13 @@ public class BaseTestCase {
 		if (browser.equals("firefox")) {
 			System.setProperty("webdriver.gecko.driver", "./src/test/resources/gekodriver.exe");
 			driver = new FirefoxDriver();
-		} else {
+		}  else if(browser.equals("chrome")) {
 			System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver.exe");
 			driver = new ChromeDriver();
+		}	else { System.out.println("browser path is not matched");
+			
 		}
+		
 		driver.get(url);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
